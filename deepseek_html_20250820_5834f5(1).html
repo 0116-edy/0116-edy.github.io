@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Resolvido - A.A.M.E. SERVIÇOS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f5f0 0%, #e6e2d6 100%);
+            color: #3c3c3c;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #d4af37;
+        }
+        
+        h1 {
+            color: #3c3c3c;
+            margin-bottom: 15px;
+        }
+        
+        .problem-section {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ff6b35;
+        }
+        
+        .solution-section {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .step {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4A90E2;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #3c3c3c;
+            color: #e0d8c0;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: block;
+            margin: 15px 0;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        
+        .tip {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .success {
+            background: #e8f5e9;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #d4af37;
+            color: #3c3c3c;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #c19d2e;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Problema Resolvido: Site Mostrando Código em Vez de Renderizar</h1>
+            <p>Soluções para quando o GitHub Pages exibe o código HTML em vez de mostrar o site</p>
+        </header>
+        
+        <div class="problem-section">
+            <h2>Por que isso acontece?</h2>
+            <p>O GitHub Pages pode exibir o código em vez do site renderizado por vários motivos:</p>
+            <ul>
+                <li>Arquivo não salvo com extensão <strong>.html</strong></li>
+                <li>Configuração incorreta do GitHub Pages</li>
+                <li>Arquivo não nomeado como <strong>index.html</strong></li>
+                <li>Problemas com o conteúdo HTML</li>
+            </ul>
+        </div>
+        
+        <div class="solution-section">
+            <h2>Soluções para o problema</h2>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span> Verifique a extensão do arquivo</h3>
+                <p>Certifique-se de que seu arquivo tenha a extensão <strong>.html</strong>.</p>
+                <p>Às vezes, o arquivo pode ser salvo como <strong>index.html.txt</strong> sem que você perceba.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">2</span> Ative o GitHub Pages</h3>
+                <p>No seu repositório, vá em <strong>Settings > Pages</strong>.</p>
+                <p>Em <strong>Branch</strong>, selecione <strong>main</strong> ou <strong>master</strong> e clique em <strong>Save</strong>.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">3</span> Nomeie o arquivo como index.html</h3>
+                <p>O arquivo principal deve chamar-se <strong>index.html</strong> para ser reconhecido como página inicial.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">4</span> Espere alguns minutos</h3>
+                <p>O GitHub Pages pode levar alguns minutos para processar e publicar seu site.</p>
+                <p>Atualize a página após 5-10 minutos.</p>
+            </div>
+            
+            <div class="step">
+                <h3><span class="step-number">5</span> Verifique a estrutura do HTML</h3>
+                <p>Seu arquivo HTML deve ter a estrutura básica correta:</p>
+                <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título do Site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Conteúdo do site --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </div>
+        </div>
+        
+        <div class="tip">
+            <h3>Dica Importante</h3>
+            <p>Se você copiou e colou o código, verifique se não há caracteres especiais ou problemas de formatação.</p>
+            <p>Às vezes, editores de texto podem adicionar formatação invisível que interfere no HTML.</p>
+        </div>
+        
+        <div class="success">
+            <h3>Verifique se está funcionando</h3>
+            <p>Depois de aplicar essas soluções, acesse seu site novamente:</p>
+            <p><strong>https://seuusuario.github.io</strong></p>
+            <p>Se ainda não funcionar, tente limpar o cache do navegador (Ctrl+F5).</p>
+        </div>
+        
+        <h2>Configuração Avançada (se necessário)</h2>
+        
+        <div class="step">
+            <h3>Criar arquivo de configuração</h3>
+            <p>Às vezes, é necessário adicionar um arquivo de configuração para garantir que o GitHub Pages reconheça seu site:</p>
+            <p>Crie um arquivo chamado <strong>.nojekyll</strong> (sem extensão) na raiz do seu repositório.</p>
+            <p>Este arquivo diz ao GitHub para não usar o processador Jekyll, que às vezes causa problemas com sites HTML simples.</p>
+        </div>
+        
+        <div class="step">
+            <h3>Verificar URL correta</h3>
+            <p>Certifique-se de que está acessando a URL correta:</p>
+            <p><strong>https://seunomedeusuario.github.io</strong> (não é https://github.com/seunomedeusuario/seunomedeusuario.github.io)</p>
+            <p>Muitas pessoas confundem a URL do repositório com a URL do site publicado.</p>
+        </div>
+        
+        <div class="tip">
+            <h3>Último recurso</h3>
+            <p>Se nada funcionar, tente estas alternativas:</p>
+            <ol>
+                <li>Exclua e recrie o repositório</li>
+                <li>Use o Netlify Drop (arraste e solte o arquivo HTML)</li>
+                <li>Use o Vercel para implantação</li>
+            </ol>
+            <a href="https://app.netlify.com/drop" class="btn" target="_blank">Usar Netlify Drop</a>
+        </div>
+    </div>
+</body>
+</html>
